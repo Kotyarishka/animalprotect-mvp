@@ -1,0 +1,167 @@
+/* 
+    Sections
+*/
+
+.section{
+    width: 100%;
+    height: max-content;
+
+    display: flex;
+    flex-direction: column; 
+
+    text-align: center;
+    justify-content: center;
+
+    background-position: center;
+
+    padding: 35px 0;
+    cursor: default;
+}
+
+.section img{
+    width: 216px;
+    height: 216px;
+
+    margin: 0 auto;
+}
+
+.section h2{
+    font-size: 44px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    margin: 0 0 10px 0;
+}
+
+.section h2::after{
+    content: '';
+
+    display: block;
+    
+    width: 160px;
+    height: 3px;
+
+    background-color: #8c7ae6;
+
+    margin: 0 auto;
+}
+
+.section h4{
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+
+    margin-bottom: 18px;
+}
+
+.section p {
+    text-align: left;
+    font-size: 16px;
+
+    margin: 15px 10px;
+}
+
+/*
+    Content
+*/
+
+.content {
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
+    z-index: 1;
+
+    font-weight: 300;
+    font-family: 'Open Sans';
+}
+
+.content p:not(.no) {
+    border-left: rgba(156, 136, 255, .4) 6px solid;
+    padding-left: 15px;
+    margin-left: 2px;
+}
+
+.title{
+    font-weight: 800;
+    font-size: 26px;
+    
+    display: flex;
+
+    text-align: left;
+}
+
+.center .title {
+    display: block;
+}
+
+.hightlight{
+    font-weight: 400;
+    /* text-decoration: underline; */
+
+    padding: 1px 5px;
+    border: 1px solid #8c7ae6;
+    border-radius: 15px;
+}
+
+.item_wrapper{
+    width: 50%;
+    cursor: default;
+}
+
+.icon{
+    margin: auto 7px;
+    transition: transform linear .2s;
+}
+
+.item_wrapper:hover .icon{
+    transform: scale(1.4);
+}
+
+/*
+    Helpers
+*/
+
+.hightlight, .title{
+    color: #9c88ff;
+}
+
+.center{
+    justify-content: center !important;
+}
+.left{
+    justify-content: left !important;
+}
+.right{
+    justify-content: right !important;
+}
+
+@media only screen and (max-width: 900px) {
+    .content {
+        justify-content: center;
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .item_wrapper{
+        width: 100%;
+    }
+
+    .content * {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .section h2{
+        font-size: 31px;
+    }
+    .section h4{
+        font-size: 16px;
+    }
+    .title{
+        font-size: 16px;
+    }
+}

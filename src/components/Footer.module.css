@@ -1,0 +1,38 @@
+/* 
+    Footer
+*/
+
+.footer{
+    margin: 0;
+    padding: 0;
+}
+
+.button{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+
+    cursor: pointer;
+
+    top: 100%;
+    left: 100%;
+
+    transform: translate(-65px, -65px);
+
+    opacity: 0;
+
+    transition: all linear .1s;
+
+    background-color: #2f3640;
+    border-radius: 50%;
+
+    z-index: 199;
+}
+
+.button:hover{
+    background-color: #718093;
+}
+
+.active{
+    opacity: 1;
+}

@@ -1,0 +1,67 @@
+.container{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    justify-content: center;
+
+    /* background-image: url('https://wallup.net/wp-content/uploads/2017/03/27/198766-cat-photo_manipulation-Creative_Design-low_poly-animals.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; */
+
+    /* background-position: center; */
+    color: #353b48;
+}
+
+.container img{
+    width: 216px;
+    height: 216px;
+
+    margin: 0 auto;
+}
+
+.container h2{
+    font-size: 44px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    margin-top: 15px;
+}
+
+.container h4{
+    font-size: 21px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+
+    margin-bottom: 15px;
+}
+
+.container a{
+    width: 190px;
+    height: 60px;
+
+    margin: 0 auto;
+
+    font-weight: 400;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    color: #fff;
+    text-decoration: none;
+    border: #fff solid 2px;
+
+    transition: all linear .2s;
+}
+
+.container a:hover{
+    background-color: #fff;
+    color: #000;
+}
