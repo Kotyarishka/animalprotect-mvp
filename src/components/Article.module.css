@@ -1,0 +1,51 @@
+.art{
+    width: 100%;
+    max-width: 350px;
+    height: 200px;
+
+    transition: transform linear .2s;
+    text-decoration: none;
+}
+
+.art > div{
+    width: 100%;
+    max-width: 350px;
+    height: 200px;
+
+    background-color: #fff;
+    background-image: url('https://cdn.discordapp.com/attachments/503635962799063091/821793131641044992/Interacting-with-animals-can-significantly-reduce-stress.png');
+
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.art p{
+    color: #fff;
+    margin: 1px auto;
+    opacity: 0;
+    
+    transition: all .1s linear;
+}
+
+.art:hover p{
+    background-color: rgba(156, 136, 255,.6);
+    opacity: 1;
+}
+
+.icon{
+    margin: auto 2px;
+}
+
+.art:hover{
+    transform: scale(1.1);
+}
+
+.art:hover .online{
+    opacity: 1;
+}

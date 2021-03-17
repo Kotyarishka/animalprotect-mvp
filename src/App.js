@@ -14,6 +14,7 @@ import {
   ScrollingProvider,
 } from 'react-scroll-section';
 import Footer from './components/Footer';
+import Article from './components/Article';
 
 function App() {
   return (
@@ -22,41 +23,14 @@ function App() {
         <Header/>
         <Intro/>
 
-        <Section id='about' title='О нас' subtitle='Информация о нас'>
-            <Content side='center'>
-                <Text title='Развитие'>
-                    Тут текст
-                    das<br/>
-                    das<br/>
-                    das<br/>
-                </Text>
-                <Text title='Развитие'>
-                    Тут текст
-                    das<br/>
-                    das<br/>
-                    das<br/>
-                </Text>
-                <Text title='Развитие'>
-                    Тут текст
-                    das<br/>
-                    das<br/>
-                    das<br/>
-                </Text>
-                <Text title='Развитие'>
-                    Тут текст
-                    das<br/>
-                    das<br/>
-                    das<br/>
-                </Text>
-
-            </Content>
-        </Section>
-
         <Section id='why' title='Значимость' subtitle='Почему это стоит сил?'>
             <Content side='center'>
                 <Text>
                   Бездомные животные, бесконтрольно проживающие на улицах городов, всегда были привычным явлением, но за последнее время их число увеличилось. Многие исследователи утверждают, что виной тому проявление халатности при уходе и содержании животного, жестокость человека по отношению к братьям нашим меньшим. Мы не призываем, мы просим Вас помочь нуждающимся.
                 </Text>
+            </Content>
+            <Content side='center'>
+                <Article/>
             </Content>
         </Section>
 

@@ -18,7 +18,7 @@ const Footer = () => {
             <div className={classNames(css.content, css.center)}>
                 <p className={css.no}>
                     Этот сайт с открытым исходным кодом.<br/>
-                    <a href='https://github.com'>
+                    <a href='https://github.com/Kotyarishka/animalprotect-mvp'>
                         <Icon path={mdiGithub}
                         title=''
                         size={'16px'}
