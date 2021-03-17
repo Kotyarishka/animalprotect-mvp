@@ -40,7 +40,6 @@ const Nav = () => {
 
             <ul className={classNames(css.list, {[css.menuActive]: menu})}>
                 <NavElement title='Главная' item='intro' menu={setMenu}/>
-                <NavElement title='О нас' item='about' menu={setMenu}/>
                 <NavElement title='Значимость' item='why' menu={setMenu}/>
                 <NavElement title='Контакты' item='contacts' menu={setMenu}/>
             </ul>
